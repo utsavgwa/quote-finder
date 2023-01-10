@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Finder</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.google.com/s2/favicons?domain=https://utsavsingh.me/"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="quote-container" id="quote-container">
+      <!-- quote -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <!-- since span doesn't take any space on the the page other than text -->
+        <!--id quote is targeted in JS to dynamically change the inner text -->
+        <span id="quote">Not all those who wander are lost;</span>
+      </div>
+      <!-- author -->
+      <div class="quote-author">
+        <span id="author">Tolkien</span>
+      </div>
+      <!-- buttons -->
+      <div class="button-container">
+        <button class="twitter-button" id="twitter" title="Tweet this!">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button id="new-quote">New Quote</button>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
