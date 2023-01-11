@@ -26,7 +26,7 @@ body {
   border-radius: 10px;
   /* rgba alpha values allows to control the opacity of the object */
   background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .quote-text {
@@ -48,7 +48,36 @@ body {
 .fa-quote-left {
   font-size: 3.5rem;
 }
-
+.button-container {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.15);
+}
+button:hover {
+  filter: brightness(140%);
+}
+button:active {
+  transform: translate(0, 0.2rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.15);
+}
+.twitter-button:hover {
+  color: #38a1f3;
+}
+.fa-twitter {
+  font-size: 1.5rem;
+}
 /* Media Query: Tablet or Smaller Device*/
 /* at bottom so that it can override anything throughout the code */
 @media screen and (max-width: 1000px) {
