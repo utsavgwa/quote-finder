@@ -62,7 +62,9 @@ async function getQuote() {
 
 // to tweet a quote
 function tweetQuote() {
-  const twitterUrl = `https://twitter.com/intent/tweet?text=I recently read an encouraging quote, so here it is: "${tText.textContent}" - ${tAuthor.textContent}.`;
+  const twitterUrl = `https://twitter.com/intent/tweet?text=I recently read an encouraging quote, so here it is: 
+  
+  "${tText.textContent}" - ${tAuthor.textContent}.`;
   window.open(twitterUrl, "_blank");
 }
 
